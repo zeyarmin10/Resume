@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <!-- <link rel="stylesheet" href="StyleForGridSystem.css"> -->
+    <!-- <link rel="stylesheet" href="CSS-Grid.css"> -->
+    <link rel="stylesheet" href="Resume-Style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;1,400&family=Roboto+Slab&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+}
+#skill > ul {
+    columns: 2;
+}
+#header {
+    grid-area: head;
+    padding: 20px;
+    text-align: center;
+}
+#passport {
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    border: 1px solid black;
+}
+.personal {
+    font-family: "Roboto Slab";
+    background-color: whitesmoke;
+    grid-area: personal;
+    padding: 20px;
+}
+.name {
+    font-size: 40px;
+    font-weight: bold;
+}
+.skill-experience {
+    font-family: "Roboto Slab";
+    background-color: whitesmoke;
+    grid-area: skill;
+    padding: 20px;
+    font-size: 13.5px;
+}
+.duties > li {
+    margin: 0 0 0 10px;
+}
+#container {
+    display: grid;
+    grid-template-columns: auto 500px;
+    grid-template-rows: auto auto auto auto;
+    grid-gap: 10px;
+    grid-template-areas: "head head"
+                         "personal skill"
+                         "personal skill"
+                         "personal skill";
+    justify-content: center;
+    background-color: whitesmoke;
+}
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="personal">
+            <div id="name">
+                <span class="name">Zeyar Min</span><br><br>
+                <div>
+                    <img src="Passport-Photo.JPG" id="passport">
+                </div>
+            </div>
+            <div id="contact">
+                <div>
+                    <h3>Date of Birth</h3>
+                    <span>August 18, 1993</span><br><br>
+                    <h3>Contact</h3>
+                    <span><b>Address:</b></span><br>
+                    <span>
+                        No.28, Kwan Ywal Dan Street,<br> Kyee Myin Daing Township, Yangon, Myanmar.
+                    </span><br><br><br>
+                    <span><b>Phone:</b></span><br>
+                    <span>
+                        09795857088
+                    </span><br><br><br>
+                    <span><b>Email:</b></span><br>
+                    <span>
+                        zeyermin@gmail.com
+                    </span><br><br><br>
+                </div>
+            </div><br>
+            <div id="availability">
+                <h3>Availability</h3>
+                <span>I can be able to work instantly</span>
+            </div>
+        </div>
+        <div class="skill-experience">
+            <div id="experience">
+                <h3>Experience</h3>
+                <div>
+                    <b>IT Assistant(2016-2018) - Pyay Garden Residence</b>
+                    <ul>
+                        <li>Install and setup wireless AP, slove WiFi error as per resident complaint</li>
+                        <li>Provides necessary IT support to staff</li>
+                        <li>Troubleshoot CCTV network & PABX system </li>
+                        <li>Network maintenance (Customers & Office)</li>
+                        <li>Troubleshoot and maintenance (Office Computer)</li>
+                        <li>Installs IT related equipment (PCs, Printers and Scanners)</li>
+                        <li>Install door lock security card for Resident</li>
+                    </ul>
+                </div>
+                <div>
+                    <b>Field Operation Technician(2018-2020) - Telecom International Myanmar (Mytel)</b>
+                    <ul>
+                        <li>Monitoring the progress and acceptance test, and completing all the documents comply with company’s regulations</li>
+                        <li>Setting up the equipment and providing high quality services to customers</li>
+                        <li>Managing BTS database, hand over the design to partners, ensuring it and fixing all the mistakes</li>
+                        <li>Operating and maintaining BTS/Link in many required different ways</li>
+                        <li>Managing all the infrastructure equipment and network assets</li>
+                        <li>Other tasks assigned by the manager</li>
+                    </ul>
+                </div>
+                <div>
+                    <b>Transmission Engineer(2021) - Viettel Construction Myanmar (Mytel)</b>
+                    <ul>
+                        <li>Preparation for the upcomming disaster</li>
+                        <li>Perform project and operational requirements</li>
+                        <li>Perform corrective maintenance cycle check on all site equipment.</li>
+                        <li>Troubleshooting fault on network systems.</li>
+                        <li>Remote support & check different local team to solve the network problem on time</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="education">
+                <h3>Education</h3>
+                <span>Bechelor of Engineering (Electronic Communication)</span>
+            </div>
+            <div id="certification">
+                <h3>Certification</h3>
+                <div>
+                    <ul>
+                        <li>A+ Hardware Course</li>
+                        <li>Network Engineer Course (MS Server 2013)</li>
+                        <li>Cisco Networking Course</li>
+                        <li>Elementry English 4 Skills (Strategy First University)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
